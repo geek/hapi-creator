@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Hapi-creator : Build hapi manifest files from a simple form">
+    <meta name="description" content="Hapi Creator : Build hapi manifest files from a simple form">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Hapi-creator</title>
+    <title>Hapi Creator</title>
     
     <!-- jQuery + jQuery template support -->
     <script type="text/javascript" src="http://www.alpacajs.org/demos/bootstrap/quickstart/lib/jquery-latest.min.js"></script>
@@ -48,90 +48,5 @@
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-  
-
-  <script type="text/javascript">
-  $(function() {
-    $('#form').alpaca({
-      "schema": {
-          "type": "object",
-          "properties": {
-              "email": {
-                  "type": "string",
-                  "required": false
-              },
-              "password": {
-                  "type": "string",
-                  "required": false,
-                  "pattern": {}
-              },
-              "file": {
-                  "type": "string",
-                  "required": false
-              },
-              "check": {
-                  "type": "boolean",
-                  "required": false,
-                  "default": true
-              }
-          },
-          "required": false
-      },
-      "options": {
-          "fields": {
-              "email": {
-                  "type": "text",
-                  "label": "Email Address",
-                  "focus": false,
-                  "validate": true,
-                  "disabled": false,
-                  "showMessages": true,
-                  "size": 40
-              },
-              "password": {
-                  "type": "password",
-                  "label": "Password",
-                  "focus": false,
-                  "validate": true,
-                  "disabled": false,
-                  "showMessages": true,
-                  "size": 40
-              },
-              "file": {
-                  "type": "file",
-                  "label": "File Upload",
-                  "focus": false,
-                  "validate": true,
-                  "disabled": false,
-                  "showMessages": true,
-                  "size": 40
-              },
-              "check": {
-                  "type": "checkbox",
-                  "rightLabel": "Sign me up for the News Letter!",
-                  "label": "Newsletter",
-                  "focus": false,
-                  "validate": true,
-                  "disabled": false,
-                  "showMessages": true
-              }
-          },
-          "focus": false,
-          "type": "object",
-          "validate": true,
-          "disabled": false,
-          "showMessages": true,
-          "collapsible": true,
-          "legendStyle": "button"
-      },
-      "data": {
-          "email": "Joe Smith",
-          "password": "MyPassword"
-      }
-    });
-  });
-  </script>
   </body>
 </html>
