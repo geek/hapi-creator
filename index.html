@@ -52,82 +52,84 @@
   
   </body>
   <script type="text/javascript">
+  $(function() {
     $('#form1').alpaca({
-    "schema": {
-        "type": "object",
-        "properties": {
-            "email": {
-                "type": "string",
-                "required": false
-            },
-            "password": {
-                "type": "string",
-                "required": false,
-                "pattern": {}
-            },
-            "file": {
-                "type": "string",
-                "required": false
-            },
-            "check": {
-                "type": "boolean",
-                "required": false,
-                "default": true
-            }
-        },
-        "required": false
-    },
-    "options": {
-        "fields": {
-            "email": {
-                "type": "text",
-                "label": "Email Address",
-                "focus": false,
-                "validate": true,
-                "disabled": false,
-                "showMessages": true,
-                "size": 40
-            },
-            "password": {
-                "type": "password",
-                "label": "Password",
-                "focus": false,
-                "validate": true,
-                "disabled": false,
-                "showMessages": true,
-                "size": 40
-            },
-            "file": {
-                "type": "file",
-                "label": "File Upload",
-                "focus": false,
-                "validate": true,
-                "disabled": false,
-                "showMessages": true,
-                "size": 40
-            },
-            "check": {
-                "type": "checkbox",
-                "rightLabel": "Sign me up for the News Letter!",
-                "label": "Newsletter",
-                "focus": false,
-                "validate": true,
-                "disabled": false,
-                "showMessages": true
-            }
-        },
-        "focus": false,
-        "type": "object",
-        "validate": true,
-        "disabled": false,
-        "showMessages": true,
-        "collapsible": true,
-        "legendStyle": "button"
-    },
-    "data": {
-        "email": "Joe Smith",
-        "password": "MyPassword"
-    }
-});
+      "schema": {
+          "type": "object",
+          "properties": {
+              "email": {
+                  "type": "string",
+                  "required": false
+              },
+              "password": {
+                  "type": "string",
+                  "required": false,
+                  "pattern": {}
+              },
+              "file": {
+                  "type": "string",
+                  "required": false
+              },
+              "check": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": true
+              }
+          },
+          "required": false
+      },
+      "options": {
+          "fields": {
+              "email": {
+                  "type": "text",
+                  "label": "Email Address",
+                  "focus": false,
+                  "validate": true,
+                  "disabled": false,
+                  "showMessages": true,
+                  "size": 40
+              },
+              "password": {
+                  "type": "password",
+                  "label": "Password",
+                  "focus": false,
+                  "validate": true,
+                  "disabled": false,
+                  "showMessages": true,
+                  "size": 40
+              },
+              "file": {
+                  "type": "file",
+                  "label": "File Upload",
+                  "focus": false,
+                  "validate": true,
+                  "disabled": false,
+                  "showMessages": true,
+                  "size": 40
+              },
+              "check": {
+                  "type": "checkbox",
+                  "rightLabel": "Sign me up for the News Letter!",
+                  "label": "Newsletter",
+                  "focus": false,
+                  "validate": true,
+                  "disabled": false,
+                  "showMessages": true
+              }
+          },
+          "focus": false,
+          "type": "object",
+          "validate": true,
+          "disabled": false,
+          "showMessages": true,
+          "collapsible": true,
+          "legendStyle": "button"
+      },
+      "data": {
+          "email": "Joe Smith",
+          "password": "MyPassword"
+      }
+    });
+  });
   </script>
 </html>
