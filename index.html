@@ -10,10 +10,16 @@
 
     <title>Hapi-creator</title>
     
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <!-- jQuery + jQuery template support -->
+    <script type="text/javascript" src="http://www.alpacajs.org/demos/bootstrap/quickstart/lib/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://www.alpacajs.org/demos/bootstrap/quickstart/lib/jquery.tmpl.js"></script>
+    
+    
     <script type="text/javascript" src="http://www.alpacajs.org/js/alpaca.min.js"></script>
     <link type="text/css" href="http://www.alpacajs.org/css/alpaca.min.css" rel="stylesheet"/>
+    
+    <!-- Custom Files -->
+    <script type="text/javascript" src="form.js"></script>
   </head>
 
   <body>
@@ -31,7 +37,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <div id="form1"></div>
+        <div id="form"></div>
       </section>
     </div>
 
@@ -48,7 +54,7 @@
 
   <script type="text/javascript">
   $(function() {
-    $('#form1').alpaca({
+    $('#form').alpaca({
       "schema": {
           "type": "object",
           "properties": {
