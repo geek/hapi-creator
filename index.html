@@ -12,9 +12,14 @@
 
     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/underscore.js"></script>
-    <script type="text/javascript" src="javascripts/opt/jsv.js"></script>
+    <script type="text/javascript" src="javascripts/jsv.js"></script>
     <script type="text/javascript" src="javascripts/jsonform.js"></script>
-    
+
+    <!-- ACE -->
+    <script src="javascripts/ace/ace.js"></script>
+    <script src="javascripts/ace/mode-json.js"></script>
+    <script src="javascripts/ace/theme-monokai.js"></script>
+
     <!-- Custom Files -->
     <script type="text/javascript" src="javascripts/main.js"></script>
   </head>
@@ -34,14 +39,17 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <div id="form"></div>
+          <form></form>
+          <div style="height: 440px; margin-bottom: 20px">
+            <pre id="manifest_editor" style="height: 400px; padding-bottom: 20px"></pre>
+          </div>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Hapi-creator maintained by <a href="https://github.com/wpreul">wpreul</a></p>
+        <p class="copyright">Hapi-creator maintained by <a href="https://github.com/wpreul">Wyatt Preul</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>

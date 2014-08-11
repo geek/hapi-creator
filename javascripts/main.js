@@ -1,23 +1,38 @@
-$('form').jsonForm({
-    schema: {
-        name: {
-            type: 'string',
-            title: 'Name',
-            required: true
+$(document).ready(function () {
+
+    var editor = ace.edit("manifest_editor");
+    editor.getSession().setMode("ace/mode/json");
+
+    $('form').jsonForm({
+        schema: {
+            "servers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "title": "Servers",
+                    "properties": {
+                        "port": {
+                            "type": "integer",
+                            "title": "Port"
+                        }
+                    }
+                }
+            },
+            "plugins": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "title": "Plugins",
+                    "properties": {
+                    }
+                }
+            }
         },
-        age: {
-            type: 'number',
-            title: 'Age'
+        onSubmitValid: function (values) {
+
+            var stringified = JSON.stringify(values, null, '    ');
+            editor.getSession().setValue(stringified);
         }
-    },
-    onSubmit: function (errors, values) {
-        if (errors) {
-            $('#res').html('<p>I beg your pardon?</p>');
-        }
-        else {
-            $('#res').html('<p>Hello ' + values.name + '.' +
-            (values.age ? '<br/>You are ' + values.age + '.' : '') +
-            '</p>');
-        }
-    }
+    });
 });
+
